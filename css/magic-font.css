@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "magic-font";
+  src:url("../fonts/magic-font.eot");
+  src:url("../fonts/magic-font.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/magic-font.woff") format("woff"),
+    url("../fonts/magic-font.ttf") format("truetype"),
+    url("../fonts/magic-font.svg#magic-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.mi {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgb(13,13,15);
+  line-height:1;
+}
+
+[data-mi]:before {
+  font-family: "magic-font" !important;
+  content: attr(data-mi);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+[class^="mi-"]:before,
+[class*=" mi-"]:before {
+  font-family: "magic-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.mi-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.mi-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.mi-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.mi-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.mi-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+  filter: none;
+}
+
+/*Symbols*/
+.mi-symbol-infinite:before {
+  content: "a";
+}
+.mi-symbol-b:before {
+  content: "b";
+}
+.mi-symbol-g:before {
+  content: "c";
+}
+.mi-symbol-r:before {
+  content: "d";
+}
+.mi-symbol-u:before {
+  content: "e";
+}
+.mi-symbol-w:before {
+  content: "f";
+}
+.mi-symbol-phyrexian:before , .mi-symbol-p:before{
+  content: "g";
+}
+.mi-symbol-tap:before,  .mi-symbol-untap:before{
+  content: "h";
+}
+
+.mi-symbol-untap{
+  -webkit-transform: rotate(270deg) scale(1, -1);
+  -ms-transform: rotate(270deg) scale(1, -1);
+  transform: rotate(270deg) scale(1, -1);
+}
+
+.mi-symbol-weird-star:before {
+  content: "i";
+}
+.mi-symbol-weird-sun:before {
+  content: "j";
+}
+.mi-symbol-weird-whatever:before {
+  content: "k";
+}
+
+/*Costs*/
+.mi-card-cost,  .mi-card-cost-w, .mi-card-cost-u, .mi-card-cost-b, .mi-card-cost-r, .mi-card-cost-g{
+	width: 1em;
+	text-align: center;
+	color: rgb(13,15,15);
+    background:rgb(202,197,192);
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+
+.mi-symbol-b.mi-card-cost, .mi-card-cost-b, .mi-split .mi-symbol-b{
+  background:rgb(186,177,171) !important;
+}
+.mi-symbol-g.mi-card-cost, .mi-card-cost-g, .mi-split .mi-symbol-g{
+  background:rgb(163,192,149) !important;
+}
+.mi-symbol-r.mi-card-cost, .mi-card-cost-r, .mi-split .mi-symbol-r{
+  background:rgb(228,153,119) !important;
+}
+.mi-symbol-u.mi-card-cost, .mi-card-cost-u, .mi-split .mi-symbol-u{
+  background:rgb(193,215,233) !important;
+}
+.mi-symbol-w.mi-card-cost, .mi-card-cost-w, .mi-split .mi-symbol-w {
+  background:rgb(248,246,216) !important;
+}
+
+/*Splits*/
+.mi-split{
+	display:inline-block;
+	font-size:50%;
+	transform: rotate(45deg)
+}
+
+.mi-split i:first-child{
+	border-radius: 100% / 50%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+	background:rgb(202,197,192);
+}
+
+.mi-split i:last-child{
+    border-radius: 100% / 50%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+	background:rgb(202,197,192);
+}
+
