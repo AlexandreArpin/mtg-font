@@ -1,6 +1,7 @@
 /*!
- *  MTG Font 1.0.0 by Alexandre Arpin - http://alexandrearpin.com/mtg-font
+ *  MTG Font 0.1.0 by Alexandre Arpin - http://alexandrearpin.com/mtg-font
  *  Based off Font Awesome's CSS - http://fontawesome.io/license (CSS: MIT License)
+ *  CSS Classes and the associated HTML are subject to change
  */
  
 /* FONT PATH
@@ -241,18 +242,30 @@
 	margin:0.1em;
 }
 
-.mi-split i:first-child{
+.mi-split .mi-symbol{
+}
+.mi-split .mi-symbol div{
+	vertical-align: middle;
+	transform: rotate(-45deg);
+}
+
+.mi-split i:nth-child(1) , .mi-split .mi-symbol:nth-child(1){
 	border-radius: 100% / 50%;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 	background:rgb(202,197,192);
-	
 }
 
-.mi-split i:last-child{
+.mi-split.mi-shadow i:nth-child(1), .mi-split .mi-shadow .mi-symbol:nth-child(2){
+	box-shadow: 0em 0.03em 0.02em #000;
+}
+.mi-split i:nth-child(2) , .mi-split .mi-symbol:nth-child(2){
     border-radius: 100% / 50%;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 	background:rgb(202,197,192);
+}
+.mi-split.mi-shadow i:nth-child(2), .mi-split .mi-shadow .mi-symbol:nth-child(2){
+	box-shadow: 0em 0.03em 0.02em #000;
 }
 
