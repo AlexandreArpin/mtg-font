@@ -47,6 +47,8 @@
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
 }
 
@@ -137,8 +139,8 @@
 }
 
 .mi-symbol-untap{
-  -webkit-transform: rotate(270deg) scale(1, -1);
   -ms-transform: rotate(270deg) scale(1, -1);
+  -webkit-transform: rotate(270deg) scale(1, -1);
   transform: rotate(270deg) scale(1, -1);
 }
 
@@ -231,6 +233,8 @@
 /*Splits*/
 .mi-split{
 	display:inline-block;
+	-ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
 
@@ -238,14 +242,19 @@
 	display:inline-block;
 	font-size:0.42em;
 	vertical-align: middle;
-	transform: rotate(-45deg);
 	margin:0.1em;
+	-ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+
 }
 
 .mi-split .mi-symbol{
 }
 .mi-split .mi-symbol div{
 	vertical-align: middle;
+	-ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
 
