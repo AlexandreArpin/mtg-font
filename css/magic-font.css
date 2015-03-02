@@ -230,8 +230,15 @@
 /*Splits*/
 .mi-split{
 	display:inline-block;
-	font-size:50%;
-	transform: rotate(45deg)
+	transform: rotate(45deg);
+}
+
+.mi-split i:before{
+	display:inline-block;
+	font-size:0.42em;
+	vertical-align: middle;
+	transform: rotate(-45deg);
+	margin:0.1em;
 }
 
 .mi-split i:first-child{
@@ -239,6 +246,7 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 	background:rgb(202,197,192);
+	
 }
 
 .mi-split i:last-child{
