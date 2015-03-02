@@ -1,53 +1,75 @@
-@charset "UTF-8";
-
+/*!
+ *  MTG Font 1.0.0 by Alexandre Arpin - http://alexandrearpin.com/mtg-font
+ *  Based off Font Awesome's CSS - http://fontawesome.io/license (CSS: MIT License)
+ */
+ 
+/* FONT PATH
+ * Icons => magic-font
+ * Header => Matrix Bold
+ * Text Description + Cost => Mplantin
+ * -------------------------- */
 @font-face {
-  font-family: "magic-font";
+  font-family: 'magic-font';
   src:url("../fonts/magic-font.eot");
-  src:url("../fonts/magic-font.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/magic-font.woff") format("woff"),
-    url("../fonts/magic-font.ttf") format("truetype"),
-    url("../fonts/magic-font.svg#magic-font") format("svg");
+  src:url("../fonts/magic-font.eot") format("embedded-opentype"),
+      url("../fonts/magic-font.woff") format("woff"),
+      url("../fonts/magic-font.ttf") format("truetype"),
+      url("../fonts/magic-font.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-.mi {
+@font-face {
+  font-family: "Matrix-Bold";
+  src: url("../fonts/Matrix-Bold.eot");
+  src: url("../fonts/Matrix-Bold.eot") format("embedded-opentype"), 
+       url("../fonts/Matrix-Bold.woff") format("woff"), 
+	   url("../fonts/Matrix-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Mplantin';
+	src: url('../fonts/Mplantin.eot');
+	src: url('../fonts/Mplantin.woff') format('woff'), 
+	     url('../fonts/Mplantin.ttf') format('truetype'), 
+		 url('../fonts/Mplantin.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.mi{
   display: inline-block;
+  font: normal normal normal 14px/1 magic-font;
+  font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: rgb(13,13,15);
-  line-height:1;
+  transform: translate(0, 0);
 }
 
-[data-mi]:before {
-  font-family: "magic-font" !important;
-  content: attr(data-mi);
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.mi-cost-text{
+  font-family: Mplantin;
 }
-
-
-
-[class^="mi-"]:before,
-[class*=" mi-"]:before {
-  font-family: "magic-font" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* makes the font 33% larger relative to the icon container */
+.mi-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
 }
-
+.mi-2x {
+  font-size: 2em;
+}
+.mi-3x {
+  font-size: 3em;
+}
+.mi-4x {
+  font-size: 4em;
+}
+.mi-5x {
+  font-size: 5em;
+}
 
 .mi-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
@@ -131,29 +153,78 @@
 
 /*Costs*/
 .mi-card-cost,  .mi-card-cost-w, .mi-card-cost-u, .mi-card-cost-b, .mi-card-cost-r, .mi-card-cost-g{
-	width: 1em;
+	width:1em;
 	text-align: center;
 	color: rgb(13,15,15);
     background:rgb(202,197,192);
     border-radius: 100%;
-    -moz-border-radius: 100%;
-    -webkit-border-radius: 100%;
 }
 
-.mi-symbol-b.mi-card-cost, .mi-card-cost-b, .mi-split .mi-symbol-b{
+.mi-card-cost:before, 
+.mi-card-cost-w:before, 
+.mi-card-cost-u:before, 
+.mi-card-cost-b:before, 
+.mi-card-cost-r:before, 
+.mi-card-cost-g:before{
+	font-size: 85%;
+	vertical-align: middle;
+}
+
+.mi-card-cost.mi-symbol-tap:before , .mi-card-cost.mi-symbol-untap:before,
+.mi-card-cost-w.mi-symbol-tap:before , .mi-card-cost-w.mi-symbol-untap:before,
+.mi-card-cost-u.mi-symbol-tap:before , .mi-card-cost-u.mi-symbol-untap:before,
+.mi-card-cost-b.mi-symbol-tap:before , .mi-card-cost-b.mi-symbol-untap:before,
+.mi-card-cost-r.mi-symbol-tap:before , .mi-card-cost-r.mi-symbol-untap:before,
+.mi-card-cost-g.mi-symbol-tap:before , .mi-card-cost-g.mi-symbol-untap:before{
+	font-size: 75%;
+}
+
+.mi-card-cost.mi-symbol-phyrexian:before , .mi-card-cost.mi-symbol-p:before,
+.mi-card-cost-w.mi-symbol-phyrexian:before , .mi-card-cost-w.mi-symbol-p:before,
+.mi-card-cost-u.mi-symbol-phyrexian:before , .mi-card-cost-u.mi-symbol-p:before,
+.mi-card-cost-b.mi-symbol-phyrexian:before , .mi-card-cost-b.mi-symbol-p:before,
+.mi-card-cost-r.mi-symbol-phyrexian:before , .mi-card-cost-r.mi-symbol-p:before,
+.mi-card-cost-g.mi-symbol-phyrexian:before , .mi-card-cost-g.mi-symbol-p:before{
+	font-size: 95%;
+}
+
+.mi-card-cost-b, 
+.mi-symbol-b.mi-card-cost, 
+.mi-split .mi-symbol-b{
   background:rgb(186,177,171) !important;
 }
-.mi-symbol-g.mi-card-cost, .mi-card-cost-g, .mi-split .mi-symbol-g{
+
+.mi-card-cost-g, 
+.mi-symbol-g.mi-card-cost, 
+.mi-split .mi-symbol-g{
   background:rgb(163,192,149) !important;
 }
-.mi-symbol-r.mi-card-cost, .mi-card-cost-r, .mi-split .mi-symbol-r{
+.mi-card-cost-r, 
+.mi-symbol-r.mi-card-cost, 
+.mi-split .mi-symbol-r{
   background:rgb(228,153,119) !important;
 }
-.mi-symbol-u.mi-card-cost, .mi-card-cost-u, .mi-split .mi-symbol-u{
+
+.mi-card-cost-u, 
+.mi-symbol-u.mi-card-cost, 
+.mi-split .mi-symbol-u{
   background:rgb(193,215,233) !important;
 }
-.mi-symbol-w.mi-card-cost, .mi-card-cost-w, .mi-split .mi-symbol-w {
+
+.mi-card-cost-w, 
+.mi-symbol-w.mi-card-cost, 
+.mi-split .mi-symbol-w {
   background:rgb(248,246,216) !important;
+}
+
+.mi-card-cost.mi-shadow,
+.mi-card-cost-w.mi-shadow,
+.mi-card-cost-u.mi-shadow,
+.mi-card-cost-b.mi-shadow,
+.mi-card-cost-r.mi-shadow,
+.mi-card-cost-g.mi-shadow
+{
+	box-shadow: -0.02em 0.04em 0.02em #000;
 }
 
 /*Splits*/
