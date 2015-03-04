@@ -40,7 +40,17 @@
 	font-style: normal;
 }
 
+
 .mi{
+  display: inline-block;
+  font: normal normal normal 14px/1 Mplantin;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mi:before{
   display: inline-block;
   font: normal normal normal 14px/1 magic-font;
   font-size: inherit;
@@ -49,9 +59,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.mi-cost-text{
-  font-family: Mplantin;
-}
 /* makes the font 33% larger relative to the icon container */
 .mi-lg {
   font-size: 1.33333333em;
@@ -172,14 +179,15 @@
 .mi-infinite:before {
   content: "\e012";
 }
+
 .mi-q, .mi-untap{
   -ms-transform: rotate(270deg) scale(1, -1);
   -webkit-transform: rotate(270deg) scale(1, -1);
   transform: rotate(270deg) scale(1, -1);
 }
 
-/*Costs*/
-.mi-card-cost,  .mi-card-cost-w, .mi-card-cost-u, .mi-card-cost-b, .mi-card-cost-r, .mi-card-cost-g{
+/*Mana*/
+.mi-mana,  .mi-mana-w, .mi-mana-u, .mi-mana-b, .mi-mana-r, .mi-mana-g{
 	width: 1em;
 	text-align: center;
 	color: rgb(13,15,15);
@@ -187,83 +195,85 @@
     border-radius: 100%;
 }
 
-.mi-card-cost.mi-symbol-untap{
-	color:rgb(255,255,255);
-	background:rgb(0,0,0);
+.mi-mana:not(.mi-w),
+.mi-mana:not(.mi-u),
+.mi-mana:not(.mi-b),
+.mi-mana:not(.mi-r),
+.mi-mana:not(.mi-g){
+	padding:0.05em;
+	font-size:0.90em;
 }
 
-.mi-card-cost:before, 
-.mi-card-cost-w:before, 
-.mi-card-cost-u:before, 
-.mi-card-cost-b:before, 
-.mi-card-cost-r:before, 
-.mi-card-cost-g:before{
+.mi-mana:before, 
+.mi-mana-w:before, 
+.mi-mana-u:before, 
+.mi-mana-b:before, 
+.mi-mana-r:before, 
+.mi-mana-g:before{
+	font-size: 80%;
+	position:relative;
+	top:0.1em;
+}
+
+.mi-mana.mi-tap:before, .mi-mana.mi-t:before, 
+.mi-mana.mi-untap:before, .mi-mana.mi-q:before{
 	font-size: 75%;
 }
 
-
-.mi-card-cost.mi-tap:before , .mi-card-cost.mi-untap:before{
-	font-size: 75%;
+.mi-mana.mi-phyrexian:before , .mi-mana.mi-p:before,
+.mi-mana-w.mi-phyrexian:before , .mi-mana-w.mi-p:before,
+.mi-mana-u.mi-phyrexian:before , .mi-mana-u.mi-p:before,
+.mi-mana-b.mi-phyrexian:before , .mi-mana-b.mi-p:before,
+.mi-mana-r.mi-phyrexian:before , .mi-mana-r.mi-p:before,
+.mi-mana-g.mi-phyrexian:before , .mi-mana-g.mi-p:before{
+	font-size: 82%;
 }
 
-.mi-card-cost.mi-untap:before,
-.mi-card-cost-w.mi-untap:before,
-.mi-card-cost-u.mi-untap:before,
-.mi-card-cost-b.mi-untap:before,
-.mi-card-cost-r.mi-untap:before,
-.mi-card-cost-g.mi-untap:before{
-	font-size: 75%;
-	color:#FFF;
-}
-
-.mi-card-cost.mi-phyrexian:before , .mi-card-cost.mi-p:before,
-.mi-card-cost-w.mi-phyrexian:before , .mi-card-cost-w.mi-p:before,
-.mi-card-cost-u.mi-phyrexian:before , .mi-card-cost-u.mi-p:before,
-.mi-card-cost-b.mi-phyrexian:before , .mi-card-cost-b.mi-p:before,
-.mi-card-cost-r.mi-phyrexian:before , .mi-card-cost-r.mi-p:before,
-.mi-card-cost-g.mi-phyrexian:before , .mi-card-cost-g.mi-p:before{
-	font-size: 95%;
-}
-
-.mi-card-cost-b, 
-.mi-b.mi-card-cost, 
+.mi-mana-b, 
+.mi-b.mi-mana, 
 .mi-split .mi-b{
   background:rgb(186,177,171) !important;
 }
 
-.mi-card-cost-g, 
-.mi-g.mi-card-cost, 
+.mi-mana-g, 
+.mi-g.mi-mana, 
 .mi-split .mi-g{
   background:rgb(163,192,149) !important;
 }
-.mi-card-cost-r, 
-.mi-r.mi-card-cost, 
+.mi-mana-r, 
+.mi-r.mi-mana, 
 .mi-split .mi-r{
   background:rgb(228,153,119) !important;
 }
 
-.mi-card-cost-u, 
-.mi-u.mi-card-cost, 
+.mi-mana-u, 
+.mi-u.mi-mana, 
 .mi-split .mi-u{
   background:rgb(193,215,233) !important;
 }
 
-.mi-card-cost-w, 
-.mi-w.mi-card-cost, 
+.mi-mana-w, 
+.mi-w.mi-mana, 
 .mi-split .mi-w {
   background:rgb(248,246,216) !important;
 }
 
-.mi-half{
-	overflow:hidden;
+
+.mi-mana.mi-untap, .mi-mana.mi-q{
+	background:rgb(0,0,0);
+}
+.mi-mana.mi-untap:before{
+	color: rgb(255,255,255);
 }
 
-.mi-card-cost.mi-shadow,
-.mi-card-cost-w.mi-shadow,
-.mi-card-cost-u.mi-shadow,
-.mi-card-cost-b.mi-shadow,
-.mi-card-cost-r.mi-shadow,
-.mi-card-cost-g.mi-shadow
+
+
+.mi-mana.mi-shadow,
+.mi-mana-w.mi-shadow,
+.mi-mana-u.mi-shadow,
+.mi-mana-b.mi-shadow,
+.mi-mana-r.mi-shadow,
+.mi-mana-g.mi-shadow
 {
 	box-shadow: -0.02em 0.04em 0.02em #000;
 }
@@ -276,17 +286,26 @@
 	transform: rotate(45deg);
 }
 
-.mi-split i:before{
+.mi-split .mi:before{
 	display:inline-block;
-	font-size:0.42em;
-	vertical-align: middle;
-	margin:0.1em;
+	position:relative;
+	font-size:0.44em;
+	margin:0.08em;
 	-ms-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
-
 }
 
+.mi-split .mi:nth-child(1).mi:before{
+	top:-0.28em;
+	left:0.05em;
+	right:0;
+	bottom:0;
+}
+
+.mi-split .mi:nth-child(2).mi:before{
+	top:-0.28em;
+}
 
 .mi-split .mi-symbol div{
 	vertical-align: middle;
