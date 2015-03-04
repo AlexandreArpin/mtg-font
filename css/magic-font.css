@@ -12,10 +12,10 @@
 @font-face {
   font-family: 'magic-font';
   src:url("../fonts/magic-font.eot");
-  src:url("../fonts/magic-font.eot") format("embedded-opentype"),
+  src:url("../fonts/magic-font.eot?#iefix") format("embedded-opentype"),
       url("../fonts/magic-font.woff") format("woff"),
       url("../fonts/magic-font.ttf") format("truetype"),
-      url("../fonts/magic-font.svg") format("svg");
+      url("../fonts/magic-font.svg#magic-font") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -47,9 +47,6 @@
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -ms-transform: translate(0, 0);
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
 }
 
 .mi-cost-text{
@@ -72,6 +69,11 @@
 }
 .mi-5x {
   font-size: 5em;
+}
+
+.mi-fw {
+  width: 1.28571429em;
+  text-align: center;
 }
 
 .mi-rotate-90 {
@@ -113,54 +115,81 @@
 }
 
 /*Symbols*/
-.mi-symbol-infinite:before {
-  content: "a";
+.mi-w:before {
+  content: "\e000";
 }
-.mi-symbol-b:before {
-  content: "b";
+.mi-u:before {
+  content: "\e001";
 }
-.mi-symbol-g:before {
-  content: "c";
+.mi-b:before {
+  content: "\e002";
 }
-.mi-symbol-r:before {
-  content: "d";
+.mi-r:before {
+  content: "\e003";
 }
-.mi-symbol-u:before {
-  content: "e";
+.mi-g:before {
+  content: "\e004";
 }
-.mi-symbol-w:before {
-  content: "f";
+.mi-p:before, .mi-phyrexian {
+  content: "\e005";
 }
-.mi-symbol-phyrexian:before , .mi-symbol-p:before{
-  content: "g";
+.mi-s:before {
+  content: "\e006";
 }
-.mi-symbol-tap:before,  .mi-symbol-untap:before{
-  content: "h";
+.mi-c:before {
+  content: "\e007";
 }
-
-.mi-symbol-untap{
+.mi-t:before, .mi-tap:before, .mi-q:before, .mi-untap:before {
+  content: "\e008";
+}
+.mi-artifact:before {
+  content: "\e009";
+}
+.mi-creature:before {
+  content: "\e00a";
+}
+.mi-enchantment:before {
+  content: "\e00b";
+}
+.mi-instant:before {
+  content: "\e00c";
+}
+.mi-land:before {
+  content: "\e00d";
+}
+.mi-multiple:before {
+  content: "\e00e";
+}
+.mi-planeswalker:before {
+  content: "\e00f";
+}
+.mi-sorcery:before {
+  content: "\e010";
+}
+.mi-tombstone:before {
+  content: "\e011";
+}
+.mi-infinite:before {
+  content: "\e012";
+}
+.mi-q, .mi-untap{
   -ms-transform: rotate(270deg) scale(1, -1);
   -webkit-transform: rotate(270deg) scale(1, -1);
   transform: rotate(270deg) scale(1, -1);
 }
 
-.mi-symbol-weird-star:before {
-  content: "i";
-}
-.mi-symbol-weird-sun:before {
-  content: "j";
-}
-.mi-symbol-weird-whatever:before {
-  content: "k";
-}
-
 /*Costs*/
 .mi-card-cost,  .mi-card-cost-w, .mi-card-cost-u, .mi-card-cost-b, .mi-card-cost-r, .mi-card-cost-g{
-	width:1em;
+	width: 1em;
 	text-align: center;
 	color: rgb(13,15,15);
     background:rgb(202,197,192);
     border-radius: 100%;
+}
+
+.mi-card-cost.mi-symbol-untap{
+	color:rgb(255,255,255);
+	background:rgb(0,0,0);
 }
 
 .mi-card-cost:before, 
@@ -169,55 +198,64 @@
 .mi-card-cost-b:before, 
 .mi-card-cost-r:before, 
 .mi-card-cost-g:before{
-	font-size: 85%;
-	vertical-align: middle;
-}
-
-.mi-card-cost.mi-symbol-tap:before , .mi-card-cost.mi-symbol-untap:before,
-.mi-card-cost-w.mi-symbol-tap:before , .mi-card-cost-w.mi-symbol-untap:before,
-.mi-card-cost-u.mi-symbol-tap:before , .mi-card-cost-u.mi-symbol-untap:before,
-.mi-card-cost-b.mi-symbol-tap:before , .mi-card-cost-b.mi-symbol-untap:before,
-.mi-card-cost-r.mi-symbol-tap:before , .mi-card-cost-r.mi-symbol-untap:before,
-.mi-card-cost-g.mi-symbol-tap:before , .mi-card-cost-g.mi-symbol-untap:before{
 	font-size: 75%;
 }
 
-.mi-card-cost.mi-symbol-phyrexian:before , .mi-card-cost.mi-symbol-p:before,
-.mi-card-cost-w.mi-symbol-phyrexian:before , .mi-card-cost-w.mi-symbol-p:before,
-.mi-card-cost-u.mi-symbol-phyrexian:before , .mi-card-cost-u.mi-symbol-p:before,
-.mi-card-cost-b.mi-symbol-phyrexian:before , .mi-card-cost-b.mi-symbol-p:before,
-.mi-card-cost-r.mi-symbol-phyrexian:before , .mi-card-cost-r.mi-symbol-p:before,
-.mi-card-cost-g.mi-symbol-phyrexian:before , .mi-card-cost-g.mi-symbol-p:before{
+
+.mi-card-cost.mi-tap:before , .mi-card-cost.mi-untap:before{
+	font-size: 75%;
+}
+
+.mi-card-cost.mi-untap:before,
+.mi-card-cost-w.mi-untap:before,
+.mi-card-cost-u.mi-untap:before,
+.mi-card-cost-b.mi-untap:before,
+.mi-card-cost-r.mi-untap:before,
+.mi-card-cost-g.mi-untap:before{
+	font-size: 75%;
+	color:#FFF;
+}
+
+.mi-card-cost.mi-phyrexian:before , .mi-card-cost.mi-p:before,
+.mi-card-cost-w.mi-phyrexian:before , .mi-card-cost-w.mi-p:before,
+.mi-card-cost-u.mi-phyrexian:before , .mi-card-cost-u.mi-p:before,
+.mi-card-cost-b.mi-phyrexian:before , .mi-card-cost-b.mi-p:before,
+.mi-card-cost-r.mi-phyrexian:before , .mi-card-cost-r.mi-p:before,
+.mi-card-cost-g.mi-phyrexian:before , .mi-card-cost-g.mi-p:before{
 	font-size: 95%;
 }
 
 .mi-card-cost-b, 
-.mi-symbol-b.mi-card-cost, 
-.mi-split .mi-symbol-b{
+.mi-b.mi-card-cost, 
+.mi-split .mi-b{
   background:rgb(186,177,171) !important;
 }
 
 .mi-card-cost-g, 
-.mi-symbol-g.mi-card-cost, 
-.mi-split .mi-symbol-g{
+.mi-g.mi-card-cost, 
+.mi-split .mi-g{
   background:rgb(163,192,149) !important;
 }
 .mi-card-cost-r, 
-.mi-symbol-r.mi-card-cost, 
-.mi-split .mi-symbol-r{
+.mi-r.mi-card-cost, 
+.mi-split .mi-r{
   background:rgb(228,153,119) !important;
 }
 
 .mi-card-cost-u, 
-.mi-symbol-u.mi-card-cost, 
-.mi-split .mi-symbol-u{
+.mi-u.mi-card-cost, 
+.mi-split .mi-u{
   background:rgb(193,215,233) !important;
 }
 
 .mi-card-cost-w, 
-.mi-symbol-w.mi-card-cost, 
-.mi-split .mi-symbol-w {
+.mi-w.mi-card-cost, 
+.mi-split .mi-w {
   background:rgb(248,246,216) !important;
+}
+
+.mi-half{
+	overflow:hidden;
 }
 
 .mi-card-cost.mi-shadow,
@@ -249,8 +287,7 @@
 
 }
 
-.mi-split .mi-symbol{
-}
+
 .mi-split .mi-symbol div{
 	vertical-align: middle;
 	-ms-transform: rotate(-45deg);
