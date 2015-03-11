@@ -302,10 +302,9 @@
 	-ms-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
-	font-size:0.55em;
-	font-weight:500;
-	margin:0 0.045em;
-	padding-left: 0.28em;
+	font-size:0.6em;
+	margin:0 0.033em;
+	padding-left: 0.22em;
 	padding-bottom:0.15em;
 	
 }
