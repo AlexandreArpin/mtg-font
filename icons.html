@@ -29,13 +29,14 @@
         .header {
             border-bottom: 1px solid #e5e5e5;
         }
-            /* Make the masthead heading the same height as the navigation */
-            .header h3 {
-                padding-bottom: 19px;
-                margin-top: 0;
-                margin-bottom: 0;
-                line-height: 40px;
-            }
+
+        /* Make the masthead heading the same height as the navigation */
+        .header h3 {
+            padding-bottom: 19px;
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: 40px;
+        }
 
         /* Custom page footer */
         .footer {
@@ -64,10 +65,12 @@
                 padding-right: 0;
                 padding-left: 0;
             }
+
             /* Space out the masthead */
             .header {
                 margin-bottom: 30px;
             }
+
             /* Remove the bottom border on the jumbotron for visual effect */
             .jumbotron {
                 border-bottom: 0;
@@ -84,159 +87,233 @@
 
 <body>
 
-    <div class="container">
-        <div class="header">
-            <nav>
-                <ul class="nav nav-pills pull-right">
-                    <li role="presentation"><a href="index.html">Home</a></li>
-                    <li role="presentation"><a href="icons.html">Icons</a></li>
-                    <li role="presentation"><a href="exemples.html">Exemples</a></li>
-                    <li role="presentation"><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <h3 class="text-muted">Magic the Gathering Font</h3>
+<div class="container">
+    <div class="header">
+        <nav>
+            <ul class="nav nav-pills pull-right">
+                <li role="presentation"><a href="index.html">Home</a></li>
+                <li role="presentation"><a href="icons.html">Icons</a></li>
+                <li role="presentation"><a href="exemples.html">Exemples</a></li>
+                <li role="presentation"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h3 class="text-muted">Magic the Gathering Font</h3>
+    </div>
+
+
+    <h1>All Symbols</h1>
+
+    <div class="row">
+        <div class="col-lg-4">
+            <h2><i class="mi mi-w"></i> Plains</h2>
+
+            <h2><i class="mi mi-u"></i> Island</h2>
+
+            <h2><i class="mi mi-b"></i> Swamp</h2>
+
+            <h2><i class="mi mi-r"></i> Mountain</h2>
+
+            <h2><i class="mi mi-g"></i> Forest</h2>
+
+            <h2><i class="mi mi-p"></i> Phyrexia</h2>
+
+        </div>
+
+        <div class="col-lg-4">
+            <h2><i class="mi mi-creature"></i> Creature</h2>
+
+            <h2><i class="mi mi-planeswalker"></i> Planeswalker</h2>
+
+            <h2><i class="mi mi-enchantment"></i> Enchantment</h2>
+
+            <h2><i class="mi mi-instant"></i> Instant</h2>
+
+            <h2><i class="mi mi-sorcery"></i> Sorcery</h2>
+
+            <h2><i class="mi mi-land"></i> Land</h2>
+
+            <h2><i class="mi mi-artifact"></i> Artifact</h2>
+        </div>
+
+        <div class="col-lg-4">
+            <h2><i class="mi mi-s"></i> Snow</h2>
+
+            <h2><i class="mi mi-c"></i> Chaos</h2>
+
+            <h2><i class="mi mi-multiple"></i> Multiple</h2>
+
+            <h2><i class="mi mi-t"></i> Tap</h2>
+
+            <h2><i class="mi mi-q"></i> Untap</h2>
+        </div>
+    </div>
+
+    <h1>Mana Symbols</h1>
+
+    <div class="row">
+        <div class="col-lg-4">
+            <h2><i class="mi mi-mana mi-w"></i> Plain</h2>
+
+            <h2><i class="mi mi-mana mi-u"></i> Island</h2>
+
+            <h2><i class="mi mi-mana mi-b"></i> Swamp</h2>
+
+            <h2><i class="mi mi-mana mi-r"></i> Mountain</h2>
+
+            <h2><i class="mi mi-mana mi-g"></i> Forest</h2>
+        </div>
+
+        <div class="col-lg-6">
+            <h2><i class="mi mi-p mi-mana-w"></i> Plain (Phyrexia)</h2>
+
+            <h2><i class="mi mi-p mi-mana-u"></i> Island (Phyrexia)</h2>
+
+            <h2><i class="mi mi-p mi-mana-b"></i> Swamp (Phyrexia)</h2>
+
+            <h2><i class="mi mi-p mi-mana-r"></i> Mountain (Phyrexia)</h2>
+
+            <h2><i class="mi mi-p mi-mana-g"></i> Forest (Phyrexia)</h2>
+        </div>
+    </div>
+
+    <h1>Hybrid Mana</h1>
+
+    <div class="row">
+        <div class="col-lg-4">
+            <h2><span class="mi-split"><i class="mi mi-b"></i><i class="mi mi-g"></i></span> Swamp/Forest</h2>
+
+            <h2><span class="mi-split"><i class="mi mi-b"></i><i class="mi mi-r"></i></span> Swamp/Moutain</h2>
+
+            <h2><span class="mi-split"><i class="mi mi-g"></i><i class="mi mi-u"></i></span> Forest/Island</h2>
+
+            <h2><span class="mi-split"><i class="mi mi-g"></i><i class="mi mi-w"></i></span> Forest/Plain</h2>
+
+            <h2><span class="mi-split"><i class="mi mi-w"></i><i class="mi mi-b"></i></span> Plain/Swamp</h2>
+
+        </div>
+
+        <div class="col-lg-4">
+            <h2><span class="mi-split"><i class="mi mi-r"></i><i class="mi mi-g"></i></span> Mountain/Forest</h2>
+
+            <h2><span class="mi-split"><i class="mi mi-r"></i><i class="mi mi-w"></i></span> Moutain/Plain</h2>
+
+            <h2><span class="mi-split"><i class="mi mi-u"></i><i class="mi mi-b"></i></span> Island/Swamp</h2>
+
+            <h2><span class="mi-split"><i class="mi mi-u"></i><i class="mi mi-r"></i></span> Island/Mountain</h2>
+
+            <h2><span class="mi-split"><i class="mi mi-w"></i><i class="mi mi-u"></i></span> Plain/Island</h2>
+        </div>
+
+        <div class="col-lg-4">
+            <h2><span class="mi-split"><i class="mi"><span>2</span></i><i class="mi mi-w"></i></span> 2/Plain</h2>
+
+            <h2><span class="mi-split"><i class="mi"><span>2</span></i><i class="mi mi-u"></i></span> 2/Island</h2>
+
+            <h2><span class="mi-split"><i class="mi"><span>2</span></i><i class="mi mi-b"></i></span> 2/Swamp</h2>
+
+            <h2><span class="mi-split"><i class="mi"><span>2</span></i><i class="mi mi-r"></i></span> 2/Moutain</h2>
+
+            <h2><span class="mi-split"><i class="mi"><span>2</span></i><i class="mi mi-g"></i></span> 2/Forest</h2>
+        </div>
+    </div>
+
+    <h1>Tap/Untap</h1>
+
+    <div class="row">
+        <div class="col-lg-4">
+            <h2><i class="mi mi-tap mi-mana"></i> Tap</h2>
+
+        </div>
+        <div class="col-lg-4">
+            <h2><i class="mi mi-untap mi-mana"></i> Untap</h2>
+
         </div>
 
 
-        <h1>All Symbols</h1>
+    </div>
+    <div>
+
+
+        <h1>Mana Symbols (Shadows)</h1>
+
         <div class="row">
             <div class="col-lg-4">
-                <h2><i class="mi mi-w"></i> Plains</h2>
-                <h2><i class="mi mi-u"></i> Island</h2>
-                <h2><i class="mi mi-b"></i> Swamp</h2>
-                <h2><i class="mi mi-r"></i> Mountain</h2>
-                <h2><i class="mi mi-g"></i> Forest</h2>
-                <h2><i class="mi mi-p"></i> Phyrexia</h2>
+                <h2><i class="mi mi-mana mi-w mi-shadow"></i> Plain</h2>
 
+                <h2><i class="mi mi-mana mi-u mi-shadow"></i> Island</h2>
+
+                <h2><i class="mi mi-mana mi-b mi-shadow"></i> Swamp</h2>
+
+                <h2><i class="mi mi-mana mi-r mi-shadow"></i> Mountain</h2>
+
+                <h2><i class="mi mi-mana mi-g mi-shadow"></i> Forest</h2>
             </div>
 
             <div class="col-lg-4">
-                <h2><i class="mi mi-creature"></i> Creature</h2>
-                <h2><i class="mi mi-planeswalker"></i> Planeswalker</h2>
-                <h2><i class="mi mi-enchantment"></i> Enchantment</h2>
-                <h2><i class="mi mi-instant"></i> Instant</h2>
-                <h2><i class="mi mi-sorcery"></i> Sorcery</h2>
-                <h2><i class="mi mi-land"></i> Land</h2>
-                <h2><i class="mi mi-artifact"></i> Artifact</h2>
+                <h2><span class="mi-split mi-shadow"><i class="mi mi-r"></i><i class="mi mi-g"></i></span>
+                    Mountain/Forest</h2>
+
+                <h2><span class="mi-split mi-shadow"><i class="mi mi-r"></i><i class="mi mi-w"></i></span> Moutain/Plain
+                </h2>
+
+                <h2><span class="mi-split mi-shadow"><i class="mi mi-u"></i><i class="mi mi-b"></i></span> Island/Swamp
+                </h2>
+
+                <h2><span class="mi-split mi-shadow"><i class="mi"><span>2</span></i><i class="mi mi-b"></i></span>
+                    2/Swamp</h2>
+
+                <h2><span class="mi-split mi-shadow"><i class="mi"><span>2</span></i><i class="mi mi-g"></i></span>
+                    2/Forest</h2>
             </div>
 
             <div class="col-lg-4">
-                <h2><i class="mi mi-s"></i> Snow</h2>
-                <h2><i class="mi mi-c"></i> Chaos</h2>
-                <h2><i class="mi mi-multiple"></i> Multiple</h2>
-                <h2><i class="mi mi-t"></i> Tap</h2>
-                <h2><i class="mi mi-q"></i> Untap</h2>
+                <h2><i class="mi mi-p mi-mana-w mi-shadow"></i> Plain (Phyrexia)</h2>
+
+                <h2><i class="mi mi-p mi-mana-u mi-shadow"></i> Island (Phyrexia)</h2>
+
+                <h2><i class="mi mi-p mi-mana-b mi-shadow"></i> Swamp (Phyrexia)</h2>
+
+                <h2><i class="mi mi-p mi-mana-r mi-shadow"></i> Mountain (Phyrexia)</h2>
+
+                <h2><i class="mi mi-p mi-mana-g mi-shadow"></i> Forest (Phyrexia)</h2>
             </div>
         </div>
 
-        <h1>Mana Symbols</h1>
-        <div class="row">
-            <div class="col-lg-4">
-                <h2><i class="mi mi-mana mi-w"></i> Plain</h2>
-                <h2><i class="mi mi-mana mi-u"></i> Island</h2>
-                <h2><i class="mi mi-mana mi-b"></i> Swamp</h2>
-                <h2><i class="mi mi-mana mi-r"></i> Mountain</h2>
-                <h2><i class="mi mi-mana mi-g"></i> Forest</h2>
-            </div>
 
-            <div class="col-lg-6">
-                <h2><i class="mi mi-p mi-mana-w"></i> Plain (Phyrexia)</h2>
-                <h2><i class="mi mi-p mi-mana-u"></i> Island (Phyrexia)</h2>
-                <h2><i class="mi mi-p mi-mana-b"></i> Swamp (Phyrexia)</h2>
-                <h2><i class="mi mi-p mi-mana-r"></i> Mountain (Phyrexia)</h2>
-                <h2><i class="mi mi-p mi-mana-g"></i> Forest (Phyrexia)</h2>
-            </div>
-        </div>
+        <footer class="footer">
+            <p>&copy; Alexandre Arpin 2015</p>
+        </footer>
 
-        <h1>Hybrid Mana</h1>
-        <div class="row">
-            <div class="col-lg-4">
-                <h2><span class="mi-split"><i class="mi mi-b"></i><i class="mi mi-g"></i></span> Swamp/Forest</h2>
-                <h2><span class="mi-split"><i class="mi mi-b"></i><i class="mi mi-r"></i></span> Swamp/Moutain</h2>
-                <h2><span class="mi-split"><i class="mi mi-g"></i><i class="mi mi-u"></i></span> Forest/Island</h2>
-                <h2><span class="mi-split"><i class="mi mi-g"></i><i class="mi mi-w"></i></span> Forest/Plain</h2>
-                <h2><span class="mi-split"><i class="mi mi-w"></i><i class="mi mi-b"></i></span> Plain/Swamp</h2>
+    </div>
+    <!-- /container -->
 
-            </div>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-            <div class="col-lg-4">
-                <h2><span class="mi-split"><i class="mi mi-r"></i><i class="mi mi-g"></i></span> Mountain/Forest</h2>
-                <h2><span class="mi-split"><i class="mi mi-r"></i><i class="mi mi-w"></i></span> Moutain/Plain</h2>
-                <h2><span class="mi-split"><i class="mi mi-u"></i><i class="mi mi-b"></i></span> Island/Swamp</h2>
-                <h2><span class="mi-split"><i class="mi mi-u"></i><i class="mi mi-r"></i></span> Island/Mountain</h2>
-                <h2><span class="mi-split"><i class="mi mi-w"></i><i class="mi mi-u"></i></span> Plain/Island</h2>
-            </div>
+    <script src="js/ripples.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.material.init();
+        });
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-            <div class="col-lg-4">
-                <h2><span class="mi-split"><i class="mi"><span>2</span></i><i class="mi mi-w"></i></span> 2/Plain</h2>
-                <h2><span class="mi-split"><i class="mi"><span>2</span></i><i class="mi mi-u"></i></span> 2/Island</h2>
-                <h2><span class="mi-split"><i class="mi"><span>2</span></i><i class="mi mi-b"></i></span> 2/Swamp</h2>
-                <h2><span class="mi-split"><i class="mi"><span>2</span></i><i class="mi mi-r"></i></span> 2/Moutain</h2>
-                <h2><span class="mi-split"><i class="mi"><span>2</span></i><i class="mi mi-g"></i></span> 2/Forest</h2>
-            </div>
-        </div>
+        ga('create', 'UA-56177003-1', 'auto');
+        ga('send', 'pageview');
 
-        <h1>Tap/Untap</h1>
-        <div class="row">
-            <div class="col-lg-4">
-                <h2><i class="mi mi-tap mi-mana"></i> Tap</h2>
-
-            </div>
-            <div class="col-lg-4">
-                <h2><i class="mi mi-untap mi-mana"></i> Untap</h2>
-
-            </div>
-
-
-        </div>
-        <div>
-
-
-
-            <h1>Mana Symbols (Shadows)</h1>
-            <div class="row">
-                <div class="col-lg-4">
-                    <h2><i class="mi mi-mana mi-w mi-shadow"></i> Plain</h2>
-                    <h2><i class="mi mi-mana mi-u mi-shadow"></i> Island</h2>
-                    <h2><i class="mi mi-mana mi-b mi-shadow"></i> Swamp</h2>
-                    <h2><i class="mi mi-mana mi-r mi-shadow"></i> Mountain</h2>
-                    <h2><i class="mi mi-mana mi-g mi-shadow"></i> Forest</h2>
-                </div>
-
-                <div class="col-lg-4">
-                    <h2><span class="mi-split mi-shadow"><i class="mi mi-r"></i><i class="mi mi-g"></i></span> Mountain/Forest</h2>
-                    <h2><span class="mi-split mi-shadow"><i class="mi mi-r"></i><i class="mi mi-w"></i></span> Moutain/Plain</h2>
-                    <h2><span class="mi-split mi-shadow"><i class="mi mi-u"></i><i class="mi mi-b"></i></span> Island/Swamp</h2>
-                    <h2><span class="mi-split mi-shadow"><i class="mi"><span>2</span></i><i class="mi mi-b"></i></span> 2/Swamp</h2>
-                    <h2><span class="mi-split mi-shadow"><i class="mi"><span>2</span></i><i class="mi mi-g"></i></span> 2/Forest</h2>
-                </div>
-
-                <div class="col-lg-4">
-                    <h2><i class="mi mi-p mi-mana-w mi-shadow"></i> Plain (Phyrexia)</h2>
-                    <h2><i class="mi mi-p mi-mana-u mi-shadow"></i> Island (Phyrexia)</h2>
-                    <h2><i class="mi mi-p mi-mana-b mi-shadow"></i> Swamp (Phyrexia)</h2>
-                    <h2><i class="mi mi-p mi-mana-r mi-shadow"></i> Mountain (Phyrexia)</h2>
-                    <h2><i class="mi mi-p mi-mana-g mi-shadow"></i> Forest (Phyrexia)</h2>
-                </div>
-            </div>
-
-
-            <footer class="footer">
-                <p>&copy; Alexandre Arpin 2015</p>
-            </footer>
-
-        </div> <!-- /container -->
-
-        <script src="js/jquery-1.10.2.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-
-        <script src="js/ripples.min.js"></script>
-        <script src="js/material.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                $.material.init();
-            });
-        </script>
+    </script>
 
 </body>
 

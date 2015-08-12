@@ -30,13 +30,14 @@
         .header {
             border-bottom: 1px solid #e5e5e5;
         }
-            /* Make the masthead heading the same height as the navigation */
-            .header h3 {
-                padding-bottom: 19px;
-                margin-top: 0;
-                margin-bottom: 0;
-                line-height: 40px;
-            }
+
+        /* Make the masthead heading the same height as the navigation */
+        .header h3 {
+            padding-bottom: 19px;
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: 40px;
+        }
 
         /* Custom page footer */
         .footer {
@@ -62,19 +63,19 @@
             border-bottom: 1px solid #e5e5e5;
         }
 
-            .jumbotron .btn {
-                padding: 14px 24px;
-                font-size: 21px;
-            }
+        .jumbotron .btn {
+            padding: 14px 24px;
+            font-size: 21px;
+        }
 
         /* Supporting marketing content */
         .marketing {
             margin: 40px 0;
         }
 
-            .marketing p + h4 {
-                margin-top: 28px;
-            }
+        .marketing p + h4 {
+            margin-top: 28px;
+        }
 
         /* Responsive: Portrait tablets and up */
         @media screen and (min-width: 768px) {
@@ -85,10 +86,12 @@
                 padding-right: 0;
                 padding-left: 0;
             }
+
             /* Space out the masthead */
             .header {
                 margin-bottom: 30px;
             }
+
             /* Remove the bottom border on the jumbotron for visual effect */
             .jumbotron {
                 border-bottom: 0;
@@ -100,62 +103,87 @@
 
 <body>
 
-    <div class="container">
-        <div class="header">
-            <nav>
-                <ul class="nav nav-pills pull-right">
-                    <li role="presentation"><a href="index.html">Home</a></li>
-                    <li role="presentation"><a href="icons.html">Icons</a></li>
-                    <li role="presentation"><a href="exemples.html">Examples</a></li>
-                    <li role="presentation"><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <h3 class="text-muted">Magic the Gathering Font</h3>
+<div class="container">
+    <div class="header">
+        <nav>
+            <ul class="nav nav-pills pull-right">
+                <li role="presentation"><a href="index.html">Home</a></li>
+                <li role="presentation"><a href="icons.html">Icons</a></li>
+                <li role="presentation"><a href="exemples.html">Examples</a></li>
+                <li role="presentation"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h3 class="text-muted">Magic the Gathering Font</h3>
+    </div>
+
+    <div class="jumbotron">
+        <h1>Magic the Gathering Font</h1>
+
+        <p class="lead">Scalable vector icons for Magic the Gathering symbols.</p>
+
+        <p><a class="btn btn-lg btn-success" href="https://github.com/AlexandreArpin/mtg-font/archive/master.zip"
+              role="button">Download</a> <a class="btn btn-lg btn-success" href="icons.html" role="button">Browse the
+            icons</a> <a class="btn btn-lg btn-success" href="exemples.html" role="button">See the examples</a></p>
+    </div>
+
+    <div class="row marketing">
+        <div class="col-lg-6">
+            <h4>100% Standalone</h4>
+
+            <p>No need to rely on an external service.</p>
+
+            <h4>Scalable</h4>
+
+            <p>Fits all devices, resolutions and DPI.</p>
+
         </div>
 
-        <div class="jumbotron">
-            <h1>Magic the Gathering Font</h1>
-            <p class="lead">Scalable vector icons for Magic the Gathering symbols.</p>
-            <p><a class="btn btn-lg btn-success" href="https://github.com/AlexandreArpin/mtg-font/archive/master.zip" role="button">Download</a> <a class="btn btn-lg btn-success" href="icons.html" role="button">Browse the icons</a> <a class="btn btn-lg btn-success" href="exemples.html" role="button">See the examples</a></p>
-		</div>
+        <div class="col-lg-6">
+            <h4>Easy to use</h4>
 
-        <div class="row marketing">
-            <div class="col-lg-6">
-                <h4>100% Standalone</h4>
-                <p>No need to rely on an external service.</p>
+            <p>Check the exemples to see how easy it is!</p>
 
-                <h4>Scalable</h4>
-                <p>Fits all devices, resolutions and DPI.</p>
+            <h4>Customizable</h4>
 
-            </div>
-
-            <div class="col-lg-6">
-                <h4>Easy to use</h4>
-                <p>Check the exemples to see how easy it is!</p>
-
-                <h4>Customizable</h4>
-                <p>Use the icons however you want and extend them to give them additional flairs.</p>
-            </div>
+            <p>Use the icons however you want and extend them to give them additional flairs.</p>
         </div>
-		
-		
+    </div>
 
-        <footer class="footer">
-            <p>&copy; Alexandre Arpin 2015</p>
-        </footer>
 
-    </div> <!-- /container -->
+    <footer class="footer">
+        <p>&copy; Alexandre Arpin 2015</p>
+    </footer>
 
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+</div>
+<!-- /container -->
 
-    <script src="js/ripples.min.js"></script>
-    <script src="js/material.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $.material.init();
-        });
-    </script>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/ripples.min.js"></script>
+<script src="js/material.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $.material.init();
+    });
+</script>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-56177003-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
 
 </body>
 
