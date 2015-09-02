@@ -45,12 +45,6 @@
         }
 
         /* Customize container */
-        @media (min-width: 768px) {
-            .container {
-                max-width: 990px;
-            }
-        }
-
         .container-narrow > hr {
             margin: 30px 0;
         }
@@ -161,13 +155,13 @@
         <div class="row">
             <div class="col-md-3 col-sm-4">
                 <p>
-                    <i class="mi mi-r mi-mana"></i> mi-r mi-mana
+                    <span style="font-size:2em;"><i class="mi mi-r mi-mana"></i></span> mi-r mi-mana
                 </p>
                 <p>
-                    <i class="mi mi-r mi-mana mi-shadow"></i> mi-r mi-mana mi-shadow
+                    <span style="font-size:2em;"><i class="mi mi-r mi-mana mi-shadow"></i></span> mi-r mi-mana mi-shadow
                 </p>
                 <p>
-                    <i class="mi mi-p mi-mana-r"></i> mi-p mi-mana-r
+                    <span style="font-size:2em;"><i class="mi mi-p mi-mana-r"></i></span> mi-p mi-mana-r
                 </p>
             </div>
             <div class="col-md-9 col-sm-8">
@@ -188,24 +182,24 @@
         <div class="row">
             <div class="col-md-3 col-sm-4">
                 <p>
-                    <span class="mi-split"><i class="mi mi-b"></i><i class="mi mi-g"></i></span> mi-split -&gt; mi-b mi-g
+                    <span class="mi-split mi-2x"><i class="mi mi-b"></i><i class="mi mi-g"></i></span> mi-split -&gt; mi-b mi-g
                 </p>
                 <p>
-                    <span class="mi-split mi-shadow"><i class="mi mi-b"></i><i class="mi mi-g"></i></span> mi-split mi-shadow -&gt; mi-b mi-g
+                    <span class="mi-split mi-shadow mi-2x"><i class="mi mi-b"></i><i class="mi mi-g"></i></span> mi-split mi-shadow -&gt; mi-b mi-g
                 </p>
                 <p>
-                    <span class="mi-split"><i class="mi"><span>2</span></i><i class="mi mi-g"></i></span> mi-split -&gt; mi mi-g
+                    <span class="mi-split mi-2x"><i class="mi mi-2"></i><i class="mi mi-g"></i></span> mi-split -&gt; mi-2 mi-g
                 </p>
             </div>
             <div class="col-md-9 col-sm-8">
                 <p>
                     You can create a hybrid mana symbol by creating a <code>mi-split</code> span and adding two <code>mi-{color}</code> icons inside.
-                    For colorless hybrid mana, simply add a <code>mi</code> icon inside and insert a value wrapped in a <code>span</code>.
+                    For colorless hybrid mana, simply use <code>mi-{x}</code>.
                 </p>
                 <div class="highlight">
-                    <pre><code class="prettyprint">&lt;span class="mi-split"&gt; &lt;i class="mi mi-b"&gt;&lt;/i&gt; &lt;i class="mi mi-g"&gt;&lt;/i&gt; &lt;/span&gt;
-&lt;span class="mi-split mi-shadow"&gt; &lt;i class="mi mi-b"&gt;&lt;/i&gt; &lt;i class="mi mi-g"&gt;&lt;/i&gt; &lt;/span&gt;
-&lt;span class="mi-split"&gt; &lt;i class="mi"&gt;&lt;span&gt;2&lt;/span&gt;&lt;/i&gt; &lt;i class="mi mi-g"&gt;&lt;/i&gt; &lt;/span&gt;</code></pre>
+                    <pre><code class="prettyprint">&lt;span class="mi-split"&gt;&lt;i class="mi mi-b"&gt;&lt;/i&gt; &lt;i class="mi mi-g"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span class="mi-split mi-shadow"&gt;&lt;i class="mi mi-b"&gt;&lt;/i&gt;&lt;i class="mi mi-g"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span class="mi-split"&gt;&lt;i class="mi mi-2"&gt;&lt;/i&gt;&lt;i class="mi mi-g"&gt;&lt;/i&gt;&lt;/span&gt;</code></pre>
                 </div>
             </div>
         </div>
