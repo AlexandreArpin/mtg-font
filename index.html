@@ -20,6 +20,7 @@
 
         /* Everything but the jumbotron gets side spacing for mobile first views */
         .header,
+        .marketing,
         .footer {
             padding-right: 15px;
             padding-left: 15px;
@@ -49,10 +50,31 @@
             margin: 30px 0;
         }
 
+        /* Main marketing message and sign up button */
+        .jumbotron {
+            text-align: center;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .jumbotron .btn {
+            padding: 14px 24px;
+            font-size: 21px;
+        }
+
+        /* Supporting marketing content */
+        .marketing {
+            margin: 40px 0;
+        }
+
+        .marketing p + h4 {
+            margin-top: 28px;
+        }
+
         /* Responsive: Portrait tablets and up */
         @media screen and (min-width: 768px) {
             /* Remove the padding we set earlier */
             .header,
+            .marketing,
             .footer {
                 padding-right: 0;
                 padding-left: 0;
@@ -67,11 +89,6 @@
             .jumbotron {
                 border-bottom: 0;
             }
-        }
-
-        /* Make the icons bigger*/
-        h2 .mi {
-            font-size: 125%;
         }
     </style>
 </head>
