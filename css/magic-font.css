@@ -339,7 +339,12 @@
 .mi-mana.mi-6:before,
 .mi-mana.mi-7:before,
 .mi-mana.mi-8:before,
-.mi-mana.mi-9:before,
+.mi-mana.mi-9:before{
+  font-size: 1.1em;
+  top: -0.125em;
+  left: 0.015em;
+}
+
 .mi-mana.mi-10:before,
 .mi-mana.mi-11:before,
 .mi-mana.mi-12:before,
@@ -350,8 +355,8 @@
 .mi-mana.mi-17:before,
 .mi-mana.mi-18:before,
 .mi-mana.mi-19:before{
-  font-size: 1.1em;
-  top: -0.1em;
+  font-size: 0.8em;
+  top: -0.3em;
 }
 
 .mi-mana.mi-x:before,
