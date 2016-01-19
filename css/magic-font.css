@@ -138,7 +138,7 @@
 .mi-s:before {
   content: "\e006";
 }
-.mi-c:before {
+.mi-chaos:before {
   content: "\e007";
 }
 .mi-t:before, .mi-tap:before, .mi-q:before, .mi-untap:before {
@@ -176,6 +176,9 @@
 }
 .mi-planeswalk:before {
   content: "\e013";
+}
+.mi-c:before {
+  content: "\e014";
 }
 .mi-q:before, .mi-untap:before{
   /* Untap is a mirror'd Tap symbol */
@@ -316,6 +319,13 @@
 .mi-mana.mi-g:before{
   top: -0.08em;
 }
+.mi-mana.mi-c:before{
+  font-size: 1em;
+  top: 0.01em;
+}
+.mi-mana.mi-s:before{
+  font-size: 0.85em;
+}
 
 /* Colorless Mana
  * Ex: 2 Colorless Mana <i class='mi mi-mana mi-2'></i>
@@ -329,7 +339,12 @@
 .mi-mana.mi-6:before,
 .mi-mana.mi-7:before,
 .mi-mana.mi-8:before,
-.mi-mana.mi-9:before,
+.mi-mana.mi-9:before{
+  font-size: 1.1em;
+  top: -0.125em;
+  left: 0.015em;
+}
+
 .mi-mana.mi-10:before,
 .mi-mana.mi-11:before,
 .mi-mana.mi-12:before,
@@ -340,8 +355,8 @@
 .mi-mana.mi-17:before,
 .mi-mana.mi-18:before,
 .mi-mana.mi-19:before{
-  font-size: 1.1em;
-  top: -0.1em;
+  font-size: 0.8em;
+  top: -0.3em;
 }
 
 .mi-mana.mi-x:before,
@@ -366,10 +381,14 @@
 /* Tap/Untap (Tap symbol + Colorless Mana background color)
  * Ex: Tap <i class="mi mi-tap mi-mana"></i>
  * -------------------------- */
-.mi-mana.mi-tap:before, .mi-mana.mi-t:before, 
-.mi-mana.mi-untap:before, .mi-mana.mi-q:before{
+.mi-mana.mi-tap:before, .mi-mana.mi-t:before{
   font-size: 0.65em;
-  top: -0.2em
+  top: -0.2em;
+  left: 0.05em;
+}
+.mi-mana.mi-untap:before, .mi-mana.mi-q:before{
+  font-size: 0.6em;
+  top: -0.35em;
 }
 
 /* Mana Shadows - Mana symbols on card headers have a slight drop shadow
