@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -9,130 +9,40 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="9.5607281mm"
-   height="7.9628997mm"
-   viewBox="0 0 33.876597 28.215001"
-   id="svg3845"
    version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="300px"
+   height="300px"
+   viewBox="0 0 300 300"
+   enable-background="new 0 0 300 300"
+   xml:space="preserve"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="weird-whatever.svg">
-  <defs
-     id="defs3847">
-    <pattern
-       y="0"
-       x="0"
-       height="6"
-       width="6"
-       patternUnits="userSpaceOnUse"
-       id="EMFhbasepattern" />
-    <pattern
-       y="0"
-       x="0"
-       height="6"
-       width="6"
-       patternUnits="userSpaceOnUse"
-       id="EMFhbasepattern-0" />
-    <pattern
-       y="0"
-       x="0"
-       height="6"
-       width="6"
-       patternUnits="userSpaceOnUse"
-       id="EMFhbasepattern-2" />
-    <pattern
-       y="0"
-       x="0"
-       height="6"
-       width="6"
-       patternUnits="userSpaceOnUse"
-       id="EMFhbasepattern-7" />
-    <pattern
-       y="0"
-       x="0"
-       height="6"
-       width="6"
-       patternUnits="userSpaceOnUse"
-       id="EMFhbasepattern-4" />
-    <pattern
-       y="0"
-       x="0"
-       height="6"
-       width="6"
-       patternUnits="userSpaceOnUse"
-       id="EMFhbasepattern-6" />
-    <pattern
-       y="0"
-       x="0"
-       height="6"
-       width="6"
-       patternUnits="userSpaceOnUse"
-       id="EMFhbasepattern-1" />
-    <pattern
-       y="0"
-       x="0"
-       height="6"
-       width="6"
-       patternUnits="userSpaceOnUse"
-       id="EMFhbasepattern-74" />
-    <pattern
-       y="0"
-       x="0"
-       height="6"
-       width="6"
-       patternUnits="userSpaceOnUse"
-       id="EMFhbasepattern-07" />
-    <pattern
-       y="0"
-       x="0"
-       height="6"
-       width="6"
-       patternUnits="userSpaceOnUse"
-       id="EMFhbasepattern-24" />
-  </defs>
-  <sodipodi:namedview
-     id="base"
+   sodipodi:docname="colorless-mana.svg"><metadata
+     id="metadata13"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+     id="defs11" /><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="-247.55884"
-     inkscape:cy="112.51842"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:window-width="742"
+     inkscape:window-height="480"
+     id="namedview9"
      showgrid="false"
-     inkscape:window-width="1680"
-     inkscape:window-height="987"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     units="px"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0" />
-  <metadata
-     id="metadata3850">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-644.2898,-600.46432)">
-    <path
-       inkscape:connector-curvature="0"
-       id="path3509"
-       d="m 665.77892,600.46438 c -10.37159,0.46566 1.2065,9.31328 -4.65661,13.96989 0,0 0,0 0,0 0,0 0,0 0,0 -0.0212,0 -0.0423,0.0212 -0.0847,0.0423 -4.08514,1.651 -8.65711,-5.01645 -8.78411,1.98966 2.15897,-3.23847 3.1538,-0.0847 6.70977,-0.27516 -1.73563,2.28597 -0.889,6.11711 -3.76763,6.73094 -5.27045,1.143 -9.12277,-5.2493 -8.7841,-9.27091 0.6985,-8.91111 7.68343,-12.97509 14.62607,-12.55176 -9.18628,-1.84148 -16.97555,5.73612 -16.74272,13.5889 0.27516,8.99578 5.03764,13.39841 12.38241,13.99108 10.37159,-0.46567 -1.2065,-9.31328 4.65664,-13.96992 0,0 0,0 0,0 0,0 0,0 0,0 0.0212,0 0.0423,-0.0212 0.0847,-0.0212 4.08512,-1.67213 8.65709,4.99531 8.78409,-2.0108 -2.15897,3.25964 -3.15381,0.0847 -6.70978,0.27517 1.73567,-2.26484 0.889,-6.09598 3.76764,-6.73098 5.27039,-1.14297 9.12272,5.27048 8.78405,9.27095 -0.6985,8.93228 -7.68338,12.97508 -14.626,12.55175 9.18625,1.84142 16.9755,-5.71497 16.74267,-13.56775 -0.27517,-9.01691 -5.03767,-13.41956 -12.38239,-14.01222 z"
-       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
-  </g>
-</svg>
+     inkscape:zoom="0.78666667"
+     inkscape:cx="150"
+     inkscape:cy="150"
+     inkscape:window-x="359"
+     inkscape:window-y="136"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Layer_1" /><g
+     id="g3"><path
+       d="M149.062,36.079c7.424,14.903,16.512,29.378,27.288,43.424c4.584,5.897,9.838,12.063,15.762,18.442   c5.843,6.379,12.33,12.759,19.353,19.031c7.076,6.272,14.823,12.223,23.267,17.852s17.53,10.775,27.287,15.386   c-14.34,7.667-28.547,16.995-42.674,28.038c-5.869,4.61-12.008,9.918-18.441,15.976c-6.379,6.005-12.651,12.599-18.79,19.729   c-6.138,7.237-12.035,15.011-17.69,23.481c-5.63,8.417-10.75,17.369-15.36,26.858c-7.184-14.1-16.136-28.038-26.885-41.869   c-9.221-11.794-20.881-24.178-34.98-37.259c-14.072-13.081-31.12-24.714-51.09-34.954c14.367-7.451,28.574-16.672,42.673-27.662   c12.035-9.489,24.446-21.337,37.232-35.543C128.824,72.802,139.814,55.861,149.062,36.079z M132.55,194.764   c6.674,8.471,12.169,17.048,16.512,25.733c5.656-12.063,12.438-22.409,20.344-31.094c7.936-8.738,15.654-16.029,23.08-21.927   c8.443-6.594,17.262-12.384,26.51-17.315c-12.304-5.576-22.758-12.384-31.309-20.318c-8.604-7.935-15.842-15.601-21.711-23.053   c-6.675-8.416-12.331-17.369-16.915-26.858c-5.629,12.277-12.384,22.784-20.157,31.47c-7.827,8.738-15.439,15.976-22.865,21.926   c-8.47,6.647-17.289,12.223-26.51,16.887c12.303,6.38,22.784,13.563,31.496,21.498S126.921,187.366,132.55,194.764L132.55,194.764z   "
+       id="path7" /></g></svg>
