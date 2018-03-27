@@ -180,7 +180,7 @@
 .mi-c:before {
   content: "\e014";
 }
-.mi-e:before {
+.mi-e:before, .mi-energy:before {
   content: "\e015";
 }
 .mi-q:before, .mi-untap:before{
