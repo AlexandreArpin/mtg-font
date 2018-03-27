@@ -180,6 +180,9 @@
 .mi-c:before {
   content: "\e014";
 }
+.mi-e:before {
+  content: "\e015";
+}
 .mi-q:before, .mi-untap:before{
   /* Untap is a mirror'd Tap symbol */
   -ms-transform: rotate(270deg) scale(1, -1);
